@@ -8,6 +8,8 @@ adjuntos = document.querySelector("#adjuntos");
 
 function mostrar() {
   console.log(document.getElementById("seleccionar").value);
+  console.log(document.getElementById("seleccionar").value);
+  
 
   if (next.value == 1) {
     condiciones.classList.remove("d-none");
