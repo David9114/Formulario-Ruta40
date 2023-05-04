@@ -55,5 +55,10 @@ i {
     display: block;
 }
 
+.invalid {
+background-color: #4CAF50
+}
 
-
+.error {
+    color: #ff0000;
+}

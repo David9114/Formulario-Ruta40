@@ -5,6 +5,7 @@ next = document.querySelector("#next"),
   general = document.querySelector("#general"),
   next1 = document.querySelector("#next1"),
   adjuntos = document.querySelector("#adjuntos");
+nitEmpresa = document.querySelector("#nitEmpresa");
 
 function mostrar() {
   console.log(document.getElementById("seleccionar").value);
@@ -25,6 +26,25 @@ function mostrar() {
     general.classList.add("d-none");
   }
 }
+
+nitEmpresa.addEventListener('blur', (eNit) => {
+  console.log("Evento blur");
+  const nit = eNit.target,
+    nitValue = eNit.target.value;
+  if (nitValue.length === 0) {
+    nit.classList.add("invalid");
+    nit.nextElementSibling.classList.add("error");
+    nit.nextElementSibling.innerText = "Por favor ingrese el campo Nit Empresa"
+    console.log("prueba");
+
+  }
+
+  console.log(nit);
+
+})
+
+
+
 
 function mostrar2() {
   if (back.value == 0) {
@@ -47,4 +67,8 @@ function mostrar4() {
     general.classList.add("d-none");
     adjuntos.classList.add("d-none");
   }
+}
+
+function validarFormulario() {
+  alert("Todo en orden");
 }
