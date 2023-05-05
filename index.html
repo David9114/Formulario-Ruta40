@@ -30,7 +30,7 @@
     </center>
     <br>
     <br>
-    <form name="addForm" id="registration-form">
+    <form id="registration-form" class="needs-validation">
         <div class="row d-flex justify-content-evenly" class="container-fluid my-5 main-container"
             class="col-6 col-sm-6 col-md-6 mb-6">
         </div>
@@ -39,8 +39,8 @@
             <div id="general">
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">TIPO DE PERSONA</button>
-                    <select class="form-select" aria-label="Default select example" id="seleccionar">
-                        <option selected>Seleccione una opción</option>
+                    <select class="form-select" aria-label="Default select example" id="seleccionar" required>
+                        <option selected disabled value="">Seleccione una opción</option>
                         <option value="Cedula">Cedula</option>
                         <option value="Cedula Extranjería">Cedula Extranjería</option>
                         <option value="Tarjeta de identidad">Tarjeta de identidad</option>
