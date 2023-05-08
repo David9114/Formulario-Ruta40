@@ -30,7 +30,7 @@
     </center>
     <br>
     <br>
-    <form id="registration-form" class="needs-validation">
+    <form id="registration-form" class="needs-validation" novalidate>
         <div class="row d-flex justify-content-evenly" class="container-fluid my-5 main-container"
             class="col-6 col-sm-6 col-md-6 mb-6">
         </div>
@@ -39,7 +39,7 @@
             <div id="general">
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">TIPO DE PERSONA</button>
-                    <select class="form-select" aria-label="Default select example" id="seleccionar" required>
+                    <select class="form-select" aria-label="Sizing example input" id="seleccionar" required>
                         <option selected disabled value="">Seleccione una opción</option>
                         <option value="Cedula">Cedula de cuidadanía</option>
                         <option value="Cedula Extranjería">Cedula Extranjería</option>
@@ -48,37 +48,34 @@
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">NIT EMPRESA</button>
-                    <input type="text" class="form-control" aria-label="Sizing example input" id="nitEmpresa">
-                    <div class="invalid-feedback">
-                    </div>
-                    <aria-describedby="inputGroup-sizing-lg"> 
+                    <input type="text" class="form-control"  id="nitEmpresa" required>
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">NOMBRE DEL
                         CONTRATISTA</button>
                     <input type="text" class="form-control" aria-label="Sizing example input" id="nombreContratista"
-                        aria-describedby="inputGroup-sizing-lg">
+                        required aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">REPRESENTANTE
                         LEGAL</button>
                     <input type="text" class="form-control" aria-label="Sizing example input" id="representanteLegal"
-                        aria-describedby="inputGroup-sizing-lg">
+                        required aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">DIRECCIÓN</button>
-                    <input type="text" class="form-control" aria-label="Sizing example input" id="direccion"
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="direccion" required
                         aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">CIUDAD</button>
-                    <input type="text" class="form-control" aria-label="Sizing example input" id="cuidad"
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="cuidad" required
                         aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">DEPARTAMENTO</button>
-                    <select class="form-select" aria-label="Default select example" id="departamento">
-                        <option selected>Seleccione una opción</option>
+                    <select class="form-select" aria-label="Default select example" id="departamento" required>
+                        <option selected disabled value="">Seleccione una opción</option>
                         <option value="Antioquia">Antioquia</option>
                         <option value="Santander">Santander</option>
                         <option value="Sucre">Sucre</option>
@@ -86,28 +83,28 @@
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">TELÉFONO FIJO</button>
-                    <input type="text" class="form-control" aria-label="Sizing example input" id="telefonoFijo"
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="telefonoFijo" required
                         aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">TELÉFONO MÓVIL</button>
                     <input type="text" class="form-control" aria-label="Sizing example input" id="telefonoMovil"
-                        aria-describedby="inputGroup-sizing-lg">
+                        required aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">FAX</button>
-                    <input type="text" class="form-control" aria-label="Sizing example input" id="fax"
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="fax" required
                         aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">E-MAIL</button>
-                    <input type="text" class="form-control" aria-label="Sizing example input" id="email"
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="email" required
                         aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary" type="button">SECTOR ECONÓMICO</button>
                     <input type="text" class="form-control" aria-label="Sizing example input" id="sectorEconomico"
-                        aria-describedby="inputGroup-sizing-lg">
+                        required aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <br>
                 <button type="button" class="btn btn-success" id="next" value="1" onclick="mostrar()">SIGUIENTE</button>

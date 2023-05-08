@@ -6,28 +6,28 @@ next = document.querySelector("#next"),
   next1 = document.querySelector("#next1"),
   adjuntos = document.querySelector("#adjuntos");
 nitEmpresa = document.querySelector("#nitEmpresa");
-const forms = document.querySelectorAll('.needs-validation')
 
-function mostrar() {
-}
+
+const forms = document.querySelectorAll('.needs-validation')
 
 Array.from(forms).forEach(form => {
   next.addEventListener('click', event => {
     if (!form.checkValidity()) {
       event.preventDefault()
       event.stopPropagation()
-
+      console.log("Prueba");
     }
 
     form.classList.add('was-validated')
   }, false)
+})
 
-  
+function siguiente() {
   if (next.value == 1) {
     condiciones.classList.remove("d-none");
     general.classList.add("d-none");
   }
-})
+}
 
 function mostrar2() {
   if (back.value == 0) {
