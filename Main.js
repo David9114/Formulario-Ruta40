@@ -2,27 +2,28 @@ next = document.querySelector("#next");
 back = document.querySelector("#back");
 back1 = document.querySelector("#back1");
 condiciones = document.querySelector("#condiciones");
-general = document.querySelector("#general");
-next1 = document.querySelector("#next1");
-adjuntos = document.querySelector("#adjuntos");
+general = document.querySelector("#general"),
+  next1 = document.querySelector("#next1"),
+  registrationform= document.querySelector("#registration-form"),
+  adjuntos = document.querySelector("#adjuntos");
 nitEmpresa = document.querySelector("#nitEmpresa");
-forms = document.querySelectorAll(".needs-validation");
-formularioUnoValido = false;
+const forms = document.querySelectorAll('.needs-validation');
 
 Array.from(forms).forEach((form) => {
   next.addEventListener("click", (event) => {
     if (!form.checkValidity()) {
       event.preventDefault();
       event.stopPropagation();
-      // formularioUnoValido = false;
-    }
+      formularioUnoValido = false;
+    } 
     form.classList.add("was-validated");
     formularioUnoValido = true;
   });
+  mostrar();
 });
 
 function mostrar() {
-  if (next.value == 1 && formularioUnoValido) {
+  if (next.value == 1) {
     condiciones.classList.remove("d-none");
     general.classList.add("d-none");
   }
@@ -51,4 +52,6 @@ function mostrar4() {
   }
 }
 
-
+function validarFormulario() {
+  alert("Todo en orden");
+}

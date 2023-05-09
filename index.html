@@ -29,11 +29,12 @@
     </center>
     <br>
     <br>
-    <form id="registration-form" class="needs-validation" novalidate>
+    
         <div class="row d-flex justify-content-evenly" class="container-fluid my-5 main-container"
             class="col-6 col-sm-6 col-md-6 mb-6">
         </div>
         <center>
+            <form id="registration-form" class="needs-validation" >
             <!-- INICIO PRIMER FORMULARIO-->
             <div id="general">
                 <div class="input-group mb-3">
@@ -106,10 +107,12 @@
                         required aria-describedby="inputGroup-sizing-lg">
                 </div>
                 <br>
-                <button type="button" class="btn btn-success" id="next" value="1" onclick="mostrar()">SIGUIENTE</button>
+                <!-- <button type="button" class="btn btn-success" id="next" value="1" onclick="mostrar()">SIGUIENTE</button> -->
+                <button type="submit" class="btn btn-success" id="next" value="1" >SIGUIENTE</button>
                 <div id='error'></div>
             </div>
             <!-- FINAL PRIMER FORMULARIO -->
+            </form>
 
             <!-- INICIO SEGUNDO FORMULARIO -->
             <div class="row d-flex justify-content-evenly d-none" id="condiciones">
@@ -245,7 +248,7 @@
                                 <br>
                                 <button type="button" class="btn btn-success" id="back1" value="1"
                                     onclick="mostrar4()">ATRAS</button>
-    </form>
+
     </center>
     <!-- FINAL TERCER FORMULARIO -->
 
