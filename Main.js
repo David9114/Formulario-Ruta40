@@ -15,14 +15,13 @@ Array.from(forms).forEach((form) => {
       event.preventDefault();
       event.stopPropagation();
       formularioUnoValido = false;
-    }
+    } 
     form.classList.add("was-validated");
     formularioUnoValido = true;
   });
 });
 
 function mostrar() {
-  console.log("Prueba", forms);
   if (next.value == 1 && formularioUnoValido) {
     condiciones.classList.remove("d-none");
     general.classList.add("d-none");
@@ -51,3 +50,5 @@ function mostrar4() {
     adjuntos.classList.add("d-none");
   }
 }
+
+

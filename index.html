@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="Estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
     <title>Inscripción proveedores</title>
 </head>
 
@@ -110,51 +109,21 @@
                 <button type="button" class="btn btn-success" id="next" value="1" onclick="mostrar()">SIGUIENTE</button>
                 <div id='error'></div>
             </div>
-    </form>
-    <!-- FINAL PRIMER FORMULARIO -->
+            <!-- FINAL PRIMER FORMULARIO -->
 
-    <!-- INICIO SEGUNDO FORMULARIO -->
-    <form action="">
-    <div class="row d-flex justify-content-evenly d-none" id="condiciones">
-        <div>
-            <div>
-                <button type="button" class="btn btn-warning">CONDICIONES RUTA 40</button>
-            </div>
-            <br>
-            <br>
-            <button type="button" class="btn btn-success">Añada las Áreas de desempeño a las cuales se
-                dedica</button>
-            <br>
-            <br>
-            <div>
-                <select name="nombre-de-campo">
-                    <option value="valor1">TIPO DE ÁREA</option>
-                    <option value="valor2">Cedula de cuidadanía</option>
-                    <option value="valor3">Cedula de extranjería</option>
-                    <option value="valor3">Tarjeta de identidad</option>
-                </select>
-                <select name="nombre-de-campo">
-                    <option value="valor1">SELECCIONE UNA OPCIÓN</option>
-                    <option value="valor2">Cedula de cuidadanía</option>
-                    <option value="valor3">Cedula de extranjería</option>
-                    <option value="valor3">Tarjeta de identidad</option>
-                </select>
+            <!-- INICIO SEGUNDO FORMULARIO -->
+            <div class="row d-flex justify-content-evenly d-none" id="condiciones">
                 <div>
-                    <br>
-                    <select name="nombre-de-campo">
-                        <option value="valor1">TIPO DE ÁREA</option>
-                        <option value="valor2">Cedula de cuidadanía</option>
-                        <option value="valor3">Cedula de extranjería</option>
-                        <option value="valor3">Tarjeta de identidad</option>
-                    </select>
-                    <select name="nombre-de-campo">
-                        <option value="valor1">SELECCIONE UNA OPCIÓN</option>
-                        <option value="valor2">Cedula de cuidadanía</option>
-                        <option value="valor3">Cedula de extranjería</option>
-                        <option value="valor3">Tarjeta de identidad</option>
-                    </select>
                     <div>
-                        <br>
+                        <button type="button" class="btn btn-warning">CONDICIONES RUTA 40</button>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-success">Añada las Áreas de desempeño a las cuales se
+                        dedica</button>
+                    <br>
+                    <br>
+                    <div>
                         <select name="nombre-de-campo">
                             <option value="valor1">TIPO DE ÁREA</option>
                             <option value="valor2">Cedula de cuidadanía</option>
@@ -167,87 +136,117 @@
                             <option value="valor3">Cedula de extranjería</option>
                             <option value="valor3">Tarjeta de identidad</option>
                         </select>
-                        <br>
+                        <div>
+                            <br>
+                            <select name="nombre-de-campo">
+                                <option value="valor1">TIPO DE ÁREA</option>
+                                <option value="valor2">Cedula de cuidadanía</option>
+                                <option value="valor3">Cedula de extranjería</option>
+                                <option value="valor3">Tarjeta de identidad</option>
+                            </select>
+                            <select name="nombre-de-campo">
+                                <option value="valor1">SELECCIONE UNA OPCIÓN</option>
+                                <option value="valor2">Cedula de cuidadanía</option>
+                                <option value="valor3">Cedula de extranjería</option>
+                                <option value="valor3">Tarjeta de identidad</option>
+                            </select>
+                            <div>
+                                <br>
+                                <select name="nombre-de-campo">
+                                    <option value="valor1">TIPO DE ÁREA</option>
+                                    <option value="valor2">Cedula de cuidadanía</option>
+                                    <option value="valor3">Cedula de extranjería</option>
+                                    <option value="valor3">Tarjeta de identidad</option>
+                                </select>
+                                <select name="nombre-de-campo">
+                                    <option value="valor1">SELECCIONE UNA OPCIÓN</option>
+                                    <option value="valor2">Cedula de cuidadanía</option>
+                                    <option value="valor3">Cedula de extranjería</option>
+                                    <option value="valor3">Tarjeta de identidad</option>
+                                </select>
+                                <br>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-success" id="back" value="0"
+                        onclick="mostrar2()">ATRAS</button>
+                    <button type="button" class="btn btn-success" id="next1" value="2"
+                        onclick="mostrar3()">SIGUIENTE</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <br>
-            <br>
-            <button type="button" class="btn btn-success" id="back" value="0" onclick="mostrar2()">ATRAS</button>
-            <button type="button" class="btn btn-success" id="next1" value="2" onclick="mostrar3()">SIGUIENTE</button>
-        </div>
-    </div>
-    <!-- FINAL SEGUNDO FORMULARIO -->
+            <!-- FINAL SEGUNDO FORMULARIO -->
 
-    <!-- INICIO TERCER FORMULARIO -->
-    <center>
-        <div>
-            <div class="row d-flex justify-content-evenly d-none" id="adjuntos">
-                <H6>Estos documentos son importantes y necesarios para formalizar y finalizar su inscripción
-                    <div type="container-fluid">
-                        <br>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">COPIA DE LA CEDULA
-                                DEL REPRESENTE LEGAL:</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">COPIA DEL
-                                RUT:</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">RECORD DE OBRAS
-                                (Listado de contratos o clientes más importanrtes) - (Opcional):</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">CAMARA DE COMERCIO
-                                (No mayor a 60 días):</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">BALANCE Y ESTADO DE
-                                FINANCIEROS Y NOTAS 2021-2022</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">DECLARACIÓN DE RENTA
-                                (Ultimos dos años):</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">RUP-REGISTRO ÚNICO DE
-                                PROPONIENTES (Opcional):</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-primary" type="button" id="tipoPersona">SARLAFT (Firma y
-                                huella legible) Descargue aquí:</button>
-                            <label for="formFile" class="form-label"></label>
-                            <input class="form-control" type="file" id="formFile">
-                        </div>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                checked>
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Acepto: Claúsula de
-                                Consentimiento Web</label>
-                        </div>
-                        <br>
-                        <br>
-                        <button type="button" class="btn btn-success" id="back1" value="1"
-                            onclick="mostrar4()">ATRAS</button>
-    </center>
+            <!-- INICIO TERCER FORMULARIO -->
+            <center>
+                <div>
+                    <div class="row d-flex justify-content-evenly d-none" id="adjuntos">
+                        <H6>Estos documentos son importantes y necesarios para formalizar y finalizar su inscripción
+                            <div type="container-fluid">
+                                <br>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">COPIA DE LA CEDULA
+                                        DEL REPRESENTE LEGAL:</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">COPIA DEL
+                                        RUT:</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">RECORD DE OBRAS
+                                        (Listado de contratos o clientes más importanrtes) - (Opcional):</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">CAMARA DE COMERCIO
+                                        (No mayor a 60 días):</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">BALANCE Y ESTADO DE
+                                        FINANCIEROS Y NOTAS 2021-2022</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">DECLARACIÓN DE RENTA
+                                        (Ultimos dos años):</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">RUP-REGISTRO ÚNICO DE
+                                        PROPONIENTES (Opcional):</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="mb-3">
+                                    <button class="btn btn-primary" type="button" id="tipoPersona">SARLAFT (Firma y
+                                        huella legible) Descargue aquí:</button>
+                                    <label for="formFile" class="form-label"></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">Acepto: Claúsula de
+                                        Consentimiento Web</label>
+                                </div>
+                                <br>
+                                <br>
+                                <button type="button" class="btn btn-success" id="back1" value="1"
+                                    onclick="mostrar4()">ATRAS</button>
     </form>
+    </center>
     <!-- FINAL TERCER FORMULARIO -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
