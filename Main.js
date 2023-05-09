@@ -14,8 +14,8 @@ Array.from(forms).forEach((form) => {
     if (!form.checkValidity()) {
       event.preventDefault();
       event.stopPropagation();
-      formularioUnoValido = false;
-    } 
+      // formularioUnoValido = false;
+    }
     form.classList.add("was-validated");
     formularioUnoValido = true;
   });
