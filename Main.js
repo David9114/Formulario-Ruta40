@@ -4,26 +4,25 @@ back1 = document.querySelector("#back1");
 condiciones = document.querySelector("#condiciones");
 general = document.querySelector("#general"),
   next1 = document.querySelector("#next1"),
+  registrationform= document.querySelector("#registration-form"),
   adjuntos = document.querySelector("#adjuntos");
 nitEmpresa = document.querySelector("#nitEmpresa");
 const forms = document.querySelectorAll('.needs-validation');
-formularioUnoValido = false;
 
-
-Array.from(forms).forEach(form => {
-  next.addEventListener('click', event => {
-    if (!form.checkValidity()) {
-      event.preventDefault()
-      event.stopPropagation()
-      formularioUnoVliado = true;
-    }
-    form.classList.add("was-validated")
-    formularioUnoValido = true;
+registrationform.addEventListener('submit',   event => {
+  event.preventDefault();
+  Array.from(forms).forEach(form => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      registrationform.classList.add("was-validated")
   });
+  mostrar();
 });
 
 function mostrar() {
-  if (next.value == 1 && formularioUnoValido) {
+  if (next.value == 1) {
     condiciones.classList.remove("d-none");
     general.classList.add("d-none");
   }
