@@ -4,18 +4,18 @@ back1 = document.querySelector("#back1");
 condiciones = document.querySelector("#condiciones");
 general = document.querySelector("#general"),
   next1 = document.querySelector("#next1"),
-  registrationform= document.querySelector("#registration-form"),
+  registrationform = document.querySelector("#registration-form"),
   adjuntos = document.querySelector("#adjuntos");
 nitEmpresa = document.querySelector("#nitEmpresa");
 const forms = document.querySelectorAll('.needs-validation');
 
 Array.from(forms).forEach((form) => {
-  next.addEventListener("click", (event) => {
+  next.addEventListener("submit", (event) => {
     if (!form.checkValidity()) {
       event.preventDefault();
       event.stopPropagation();
       formularioUnoValido = false;
-    } 
+    }
     form.classList.add("was-validated");
     formularioUnoValido = true;
   });
@@ -50,8 +50,4 @@ function mostrar4() {
     general.classList.add("d-none");
     adjuntos.classList.add("d-none");
   }
-}
-
-function validarFormulario() {
-  alert("Todo en orden");
 }
